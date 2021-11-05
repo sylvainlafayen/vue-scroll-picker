@@ -346,11 +346,11 @@ export default defineComponent({
       const topRect = $layerTop.getBoundingClientRect()
       const bottomRect = $layerBottom.getBoundingClientRect()
 
-      if (topRect.left <= x && x <= topRect.right && topRect.top <= y && y <= topRect.bottom) {
-        this.correction(this.internalIndex - 1)
-      } else if (bottomRect.left <= x && x <= bottomRect.right && bottomRect.top <= y && y <= bottomRect.bottom) {
-        this.correction(this.internalIndex + 1)
-      }
+      //if (topRect.left <= x && x <= topRect.right && topRect.top <= y && y <= topRect.bottom) {
+      //  this.correction(this.internalIndex - 1)
+      //} else if (bottomRect.left <= x && x <= bottomRect.right && bottomRect.top <= y && y <= bottomRect.bottom) {
+      //  this.correction(this.internalIndex + 1)
+      //}
     },
     correction(index: number) {
       const nextInternalIndex = this.sanitizeInternalIndex(index)
